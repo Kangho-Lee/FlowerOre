@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/plantbook_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kt.iot.mobile.ui.activity.plantbook.Plantbook_MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back"
+            android:onClick="back"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="식물도감"
+            android:textSize="30sp"
+            android:paddingLeft="25dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:id="@+id/tab_first"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="논·밭식물" />
+
+        <TextView
+            android:id="@+id/tab_second"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="꽃·밭식물" />
+
+        <TextView
+            android:id="@+id/tab_third"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="산·들식물" />
+
+        <TextView
+            android:id="@+id/tab_fourth"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="물속식물" />
+
+        <TextView
+            android:id="@+id/tab_fifth"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="바닷속식물" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
